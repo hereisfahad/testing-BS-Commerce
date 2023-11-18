@@ -1,0 +1,21 @@
+{
+    "css": {
+        "public/build/css/dist.min.css": [
+            "public/**/assets/css/*.css"
+        ]
+    },
+    "js": {
+        "public/build/js/dist.min.js": [
+            "public/assets/lib/angular/angular.js",
+            "public/assets/lib/angular-mocks/angular-mocks.js",
+            "public/assets/lib/angular-cookies/angular-cookies.js",
+            "public/assets/lib/angular-resource/angular-resource.js",
+            "public/assets/lib/angular-ui-router/release/angular-ui-router.js",
+            "public/assets/lib/jquery/dist/jquery.min.js",
+            "public/assets/lib/angular-bootstrap/ui-bootstrap.js",
+            "public/assets/lib/angular-bootstrap/ui-bootstrap-tpls.js",
+            "public/*/*.js",
+            "public/*/*/*.js"
+        ]
+    }
+}
