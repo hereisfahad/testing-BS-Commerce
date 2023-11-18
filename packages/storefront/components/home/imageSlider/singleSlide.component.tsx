@@ -1,0 +1,32 @@
+import Image from 'next/image';
+
+import { productInterface } from '@/components/home/imageSlider/models/index';
+
+const SinglSlide = (props: { product: productInterface }) => {
+  const { title, description, deatils, image } = props.product;
+  return (
+    <div className="2xl: grid h-72 items-center sm:h-72 md:h-72 lg:h-80 xl:h-96 2xl:h-96">
+      <div className="absolute inset-0 scale-125 md:inset-0 md:scale-125 lg:scale-100 ">
+        <Image src={image} alt="..." layout="fill" />
+      </div>
+      <div className="container z-10 mx-auto text-center font-[sans-serif] md:pl-8 md:text-left  lg:pt-4 xl:pl-4 ">
+        <h1 className=" text-2xl font-bold sm:text-2xl md:text-3xl lg:text-left lg:text-4xl xl:text-5xl">
+          {title}
+        </h1>
+        <h2 className="xl:text-4xlh text-xl font-thin md:text-2xl lg:mt-3 lg:text-3xl 2xl:text-5xl">
+          {description}
+        </h2>
+        <div className="mx-auto mt-1 w-3/4 text-sm font-thin md:ml-0 md:w-2/5 md:text-base lg:mt-4 lg:w-11/12">
+          {deatils}
+        </div>
+        <div className="mt-3 lg:mt-8">
+          <button className="left-0 rounded-lg bg-primary py-2 px-4 text-xs font-bold uppercase text-white hover:bg-neutral-700 sm:text-xs md:text-sm xl:text-base">
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SinglSlide;
