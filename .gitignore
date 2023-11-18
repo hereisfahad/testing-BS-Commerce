@@ -1,0 +1,30 @@
+# Build folders
+/build
+packages/*/build/
+packages/*/examples/*/build/
+es
+lib
+umd
+
+
+
+# Cache folders
+.cache
+
+# Logs
+logs
+*.log
+
+
+# Editor
+.DS_Store
+*.swp
+.idea
+.vscode
+.env.local
+
+# Dependency directory
+node_modules
+
+#lock file
+package-lock.json
